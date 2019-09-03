@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "643406377132",
+    "firebase_url": "https://gsm-heath-care.firebaseio.com",
+    "project_id": "gsm-heath-care",
+    "storage_bucket": "gsm-heath-care.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643406377132:android:60dca3d867225be8",
+        "android_client_info": {
+          "package_name": "com.example.healthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643406377132-fuhft5mji04dh89r2dfj1dclllomqdn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwGpQ_7hhw9bXuop_YrvtaxDAY39FMSlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "643406377132-fuhft5mji04dh89r2dfj1dclllomqdn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
