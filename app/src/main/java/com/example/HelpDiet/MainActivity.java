@@ -1,4 +1,4 @@
-package com.example.healthcare;
+package com.example.HelpDiet;
 
 
 import androidx.appcompat.app.AppCompatActivity;
