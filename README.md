@@ -1,2 +1,2 @@
-# Health-Care
+# HelpDiet
  Android App
