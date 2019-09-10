@@ -1,5 +1,5 @@
 # HelpDiet
- Android App
- Gwangju Software Meister High School 
- Club "Newtlin"
+==========  
+ Gwangju Software Meister High School  
+ Android Development Club "Newtlin"  
  
