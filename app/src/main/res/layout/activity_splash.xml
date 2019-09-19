@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="HELP DIET"
+        android:text="다이어트는 오늘부터"
         android:textAlignment="center"
         android:textColor="#f44336"
         android:textSize="50sp"

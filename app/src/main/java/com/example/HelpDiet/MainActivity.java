@@ -7,12 +7,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.ComponentName;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
+
+import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final int REQUEST_CODE = 0;
+    private ImageView profileImage;
 
     class BtnOnClickListner implements Button.OnClickListener {
         @Override
@@ -51,10 +59,45 @@ public class MainActivity extends AppCompatActivity {
         Button calendarBtn = (Button) findViewById(R.id.calendarButton);
         Button foodBtn = (Button) findViewById(R.id.foodButton);
 
+        profileImage = findViewById(R.id.profileImage);
+
+        profileImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(intent, REQUEST_CODE);
+            }
+        });
+
         foodBtn.setOnClickListener(onClickListner);
         machineBtn.setOnClickListener(onClickListner);
         calendarBtn.setOnClickListener(onClickListner);
         chartBtn.setOnClickListener(onClickListner);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        if(requestCode == REQUEST_CODE){
+            if(resultCode == RESULT_OK){
+                try{
+                    InputStream in = getContentResolver().openInputStream(data.getData());
+
+                    Bitmap img = BitmapFactory.decodeStream(in);
+                    in.close();
+
+                    profileImage.setImageBitmap(img);
+                }catch(Exception e)
+                {
+
+                }
+            }
+            else if(resultCode == RESULT_CANCELED)
+            {
+                Toast.makeText(this, "사진 선택 취소", Toast.LENGTH_LONG).show();
+            }
+        }
     }
 
     @Override
