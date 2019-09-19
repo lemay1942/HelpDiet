@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">HelpDiet</string>
+    <string name="first_name">Name</string>
+    <string name="first_sex">Sex</string>
+    <string name="first_height">Height</string>
+    <string name="first_weight">Weight</string>
 </resources>
