@@ -17,15 +17,15 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                goToMainActivity();
+                goToLoginActivity();
             }
         },2000);
 
     }
 
-    private void goToMainActivity() {
-        Intent mainActivityIntent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(mainActivityIntent);
+    private void goToLoginActivity() {
+        Intent loginActivityIntent = new Intent(getApplicationContext(), LoginActivity.class);
+        startActivity(loginActivityIntent);
         finish();
     }
 }
