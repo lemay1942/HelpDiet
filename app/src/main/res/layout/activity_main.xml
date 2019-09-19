@@ -58,7 +58,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="225dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="225dp"
         android:background="@drawable/customborder"
         android:orientation="horizontal">
@@ -83,6 +83,7 @@
                 android:layout_weight="1"
                 android:text="@string/first_name"
                 android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -93,6 +94,7 @@
                 android:layout_weight="1"
                 android:text="@string/first_sex"
                 android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -103,6 +105,7 @@
                 android:layout_weight="1"
                 android:text="@string/first_height"
                 android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -113,11 +116,25 @@
                 android:layout_weight="1"
                 android:text="@string/first_weight"
                 android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/Rebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="225dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:text="정보수정"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold" />
 
 </RelativeLayout>
