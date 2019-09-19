@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
                     intent = new Intent(getApplicationContext(), MachineActivity.class);
                     startActivity(intent);
                     break;
+                case R.id.changeButton:
+                    intent = new Intent(getApplicationContext(), ChangeActivity.class);
+                    startActivity(intent);
             }
         }
     }
@@ -59,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         Button machineBtn = (Button) findViewById(R.id.machineButton);
         Button calendarBtn = (Button) findViewById(R.id.calendarButton);
         Button foodBtn = (Button) findViewById(R.id.foodButton);
+        Button changeBtn = (Button) findViewById(R.id.changeButton);
 
         imageButton = findViewById(R.id.imageButton);
         profileImage = findViewById(R.id.profileImage);
@@ -77,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
         machineBtn.setOnClickListener(onClickListner);
         calendarBtn.setOnClickListener(onClickListner);
         chartBtn.setOnClickListener(onClickListner);
+        changeBtn.setOnClickListener(onClickListner);
     }
 
     @Override
