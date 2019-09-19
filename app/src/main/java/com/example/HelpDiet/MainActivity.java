@@ -20,6 +20,7 @@ import java.io.InputStream;
 public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_CODE = 0;
+    private Button imageButton;
     private ImageView profileImage;
 
     class BtnOnClickListner implements Button.OnClickListener {
@@ -59,9 +60,10 @@ public class MainActivity extends AppCompatActivity {
         Button calendarBtn = (Button) findViewById(R.id.calendarButton);
         Button foodBtn = (Button) findViewById(R.id.foodButton);
 
+        imageButton = findViewById(R.id.imageButton);
         profileImage = findViewById(R.id.profileImage);
 
-        profileImage.setOnClickListener(new View.OnClickListener() {
+        imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();

@@ -88,17 +88,6 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/sexText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/first_sex"
-                android:textAlignment="center"
-                android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
                 android:id="@+id/heightText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -120,22 +109,45 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/goalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/first_goalWeight"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
         </LinearLayout>
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/rebutton"
-        android:layout_width="wrap_content"
+        android:id="@+id/reButton"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/profile"
-        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="587dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="225dp"
         android:background="@color/common_google_signin_btn_text_dark_default"
         android:text="정보수정"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/imageButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:text="이미지변경"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="18sp"
         android:textStyle="bold" />

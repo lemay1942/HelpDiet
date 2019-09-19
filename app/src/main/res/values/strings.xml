@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">HelpDiet</string>
-    <string name="first_name">Name</string>
-    <string name="first_sex">Sex</string>
-    <string name="first_height">Height</string>
-    <string name="first_weight">Weight</string>
+    <string name="first_name">이름</string>
+    <string name="first_goalWeight">목표체중</string>
+    <string name="first_height">키</string>
+    <string name="first_weight">몸무게</string>
 </resources>
