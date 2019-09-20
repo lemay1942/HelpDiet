@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.codepath.doit.activities.MainActivity" >
+    <item android:id="@+id/action_settings"
+        android:title="@string/share_menu"
+        android:onClick="onShareClick"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_change_language"
+        android:orderInCategory="60"
+        android:title="@string/language_setting"
+        app:showAsAction="never"/>
+    <item android:id="@+id/search"
+        android:title="@string/search_task"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+    <item android:id="@+id/deleteItems"
+        android:title="@string/delete_items"
+        android:icon="@drawable/ic_delete_black_24dp"
+        android:onClick="deleteItems"
+        app:showAsAction="always" />
+</menu>

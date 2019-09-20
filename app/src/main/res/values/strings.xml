@@ -1,7 +1,46 @@
 <resources>
     <string name="app_name">HelpDiet</string>
-    <string name="first_name">이름</string>
-    <string name="first_goalWeight">목표체중</string>
-    <string name="first_height">키</string>
-    <string name="first_weight">몸무게</string>
+    <string name="first_name">김민규</string>
+    <string name="first_goalWeight">60kg</string>
+    <string name="first_height">178cm</string>
+    <string name="first_weight">65kg</string>
+    <string name="add_button">Add</string>
+    <string name="save_button">Save</string>
+    <string name="priority_prompt">Priority</string>
+    <string name="share_menu">Share</string>
+    <string name="edit_item_text"> Edit Item Below</string>
+    <string name="search_hint">Search task</string>
+    <string name="quick_add_hint">Quickly add a new item</string>
+    <string name="mic_image">Talk to add task</string>
+    <string name="click_image">Click to add task</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string-array name="priority_array">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="task_to_be_done">Task to be done</string>
+    <string name="enter_task_here">Enter task here..</string>
+    <string name="due_date">Due date</string>
+    <string name="date_not_set">Date not set</string>
+    <string name="time_not_set">Time not set</string>
+    <string name="enter_priority">Enter priority</string>
+    <string name="click_to_set_date">Click to set date</string>
+    <string name="click_to_set_time">Click to set time</string>
+    <string name="cancel_date">cancel date</string>
+    <string name="cancel_time">cancel time</string>
+    <string name="search_task">Search task</string>
+    <string name="save_item">Save</string>
+    <string name="share_item">Share</string>
+    <string name="language_setting">Change language</string>
+    <string name="delete_items">delete items</string>
+    <string-array name="lang_select">
+        <item>English</item>
+        <item>हिन्दी</item>
+        <item>ಕನ್ನಡ</item>
+    </string-array>
 </resources>

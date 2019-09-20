@@ -14,7 +14,6 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".MachineActivity" />
         <activity android:name=".FoodActivity" />
-        <activity android:name=".CalendarActivity" />
         <activity android:name=".ChartActivity" />
         <activity
             android:name=".SplashActivity"

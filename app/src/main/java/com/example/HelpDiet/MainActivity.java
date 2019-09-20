@@ -4,7 +4,7 @@ package com.example.HelpDiet;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.ComponentName;
+
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+
 import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
     private Button imageButton;
     private ImageView profileImage;
 
+
+    /*private String user_name;
+    private int height;
+    private int weight;
+    private int tg_weight;*/
+
     class BtnOnClickListner implements Button.OnClickListener {
         @Override
         public void onClick(View view){
@@ -30,10 +37,6 @@ public class MainActivity extends AppCompatActivity {
             switch (view.getId()) {
                 case R.id.chartButton:
                     intent = new Intent(getApplicationContext(), ChartActivity.class);
-                    startActivity(intent);
-                    break;
-                case R.id.calendarButton:
-                    intent = new Intent(getApplicationContext(), CalendarActivity.class);
                     startActivity(intent);
                     break;
                 case R.id.foodButton:
@@ -54,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         BtnOnClickListner onClickListner = new BtnOnClickListner();
@@ -74,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 startActivityForResult(intent, REQUEST_CODE);
+
             }
         });
 
@@ -85,23 +90,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data){
-        if(requestCode == REQUEST_CODE){
-            if(resultCode == RESULT_OK){
-                try{
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                try {
                     InputStream in = getContentResolver().openInputStream(data.getData());
 
                     Bitmap img = BitmapFactory.decodeStream(in);
                     in.close();
 
                     profileImage.setImageBitmap(img);
-                }catch(Exception e)
-                {
+                } catch (Exception e) {
 
                 }
-            }
-            else if(resultCode == RESULT_CANCELED)
-            {
+            } else if (resultCode == RESULT_CANCELED) {
                 Toast.makeText(this, "사진 선택 취소", Toast.LENGTH_LONG).show();
             }
         }
