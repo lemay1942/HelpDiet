@@ -43,4 +43,8 @@
         <item>हिन्दी</item>
         <item>ಕನ್ನಡ</item>
     </string-array>
+    <string name="title_activity_myfood">myfood</string>
+    <string name="title_home">곡류</string>
+    <string name="title_dashboard">육류</string>
+    <string name="title_notifications">과채류,음료</string>
 </resources>

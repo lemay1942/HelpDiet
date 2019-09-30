@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:text="확인"
+            android:id="@+id/endbtn"/>
+
+            <TextView
+                android:id="@+id/KcalView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kcal : 0"
+                android:textSize="40dp"
+                android:layout_marginLeft="188dp"
+                android:background="@android:color/holo_orange_dark"
+                android:textColor="@android:color/white"/>
+
+
+
+    </LinearLayout>
+        <!-- 첫 번째 줄-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="50dp">
+<!--                첫 칸-->
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="70dp">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            app:srcCompat="@drawable/rice1" />
+
+                        <CheckBox
+                            android:id="@+id/CheckBox1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="쌀밥(210g) 310Kcal"
+                            android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+<!--                두 번째 칸-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            app:srcCompat="@drawable/jobrice8" />
+
+                        <CheckBox
+                            android:id="@+id/CheckBox2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="잡곡밥(210g) 340Kcal"
+                            android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+<!--                세 번째 칸 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            app:srcCompat="@drawable/hmrice12" />
+
+                        <CheckBox
+                            android:id="@+id/CheckBox3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="현미밥(210g) 321Kcal"
+                            android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+        </LinearLayout>
+
+
+
+        <!-- 두 번째 줄-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="50dp">
+                <!--                첫 칸-->
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="70dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            app:srcCompat="@drawable/tofu20" />
+
+                        <CheckBox
+                            android:id="@+id/CheckBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="두부(100g) 88Kcal"
+                            android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+                <!--                두 번째 칸-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            app:srcCompat="@drawable/blackrice26" />
+
+                        <CheckBox
+                            android:id="@+id/CheckBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="흑미밥(210g) 293Kcal"
+                            android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+                <!--                세 번째 칸 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            app:srcCompat="@drawable/dduck28" />
+
+                        <CheckBox
+                            android:id="@+id/CheckBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="떡볶이(200g) 280Kcal"
+                            android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- 세 번째 줄-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="50dp">
+                <!--                첫 칸-->
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="70dp">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            app:srcCompat="@drawable/kimbab29" />
+
+                        <CheckBox
+                            android:id="@+id/CheckBox7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="김밥(200g) 318Kcal"
+                            android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+                <!--                두 번째 칸-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                <!--                세 번째 칸 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="15dp">
+
+                </LinearLayout>
+        </LinearLayout>
+
+
+</LinearLayout>

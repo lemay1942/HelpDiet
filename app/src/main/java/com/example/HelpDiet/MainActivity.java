@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     break;
                 case R.id.foodButton:
-                    intent = new Intent(getApplicationContext(), FoodActivity.class);
+                    intent = new Intent(getApplicationContext(), myfood.class);
                     startActivity(intent);
                     break;
                 case R.id.machineButton:
@@ -48,7 +48,10 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     break;
                 case R.id.changeButton:
-                    intent = new Intent(getApplicationContext(), ChangeActivity.class);
+                Toast.makeText(getApplicationContext(), "아직 정보 수정 기능은 이용하실 수 없습니다.", Toast.LENGTH_SHORT);
+
+                case R.id.calendarButton:
+                    intent = new Intent(getApplicationContext(), Todo_Listmain.class);
                     startActivity(intent);
             }
         }
@@ -81,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
 
         foodBtn.setOnClickListener(onClickListner);
         machineBtn.setOnClickListener(onClickListner);
