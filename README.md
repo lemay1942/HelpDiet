@@ -1,3 +1,3 @@
 # HelpDiet  
-Android App
+Android Health Care App
  
